@@ -58,7 +58,7 @@ DWORD WINAPI ClientThread( LPVOID lpParam )
 	int				nResult;
 	char*			buffer = new char[32768];
 	char*			b = new char[32768];
-	MINE_MOVE		m;
+	//MINE_MOVE		m;
 	MINE_PACKET		p;
 	MINE_PACKET		p2;
 	int				nCurPacket = 0;

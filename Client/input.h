@@ -10,6 +10,8 @@
 #ifndef _INPUT_H
 #define _INPUT_H
 
+#define DIRECTINPUT_VERSION 0x0800
+
 #include <dinput.h>
 
 #define INPUT_CREATE_KEYBOARD	0x01
