@@ -4,9 +4,9 @@ cl = cl
 link = link
 clflags = /nologo /EHsc /c /D "NDEBUG" /D "_UNICODE" /D "UNICODE" /Zc:wchar_t /W3 /O2 /Oi $(inc)
 linkflags = /RELEASE /SUBSYSTEM:CONSOLE /NOLOGO /INCREMENTAL:NO /MACHINE:X86 $(libpath)
-libs = kernel32.lib user32.lib gdi32.lib d3d9.lib d3dx9.lib dinput8.lib dxguid.lib ws2_32.lib
-objs = main.obj game.obj text.obj input.obj graphics.obj debug.obj
-target = mmclient.exe
+libs = kernel32.lib user32.lib ws2_32.lib winmm.lib
+objs = main.obj game.obj debug.obj
+target=mmserver.exe
 
 all: $(target)
 
